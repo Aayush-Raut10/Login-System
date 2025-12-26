@@ -17,7 +17,6 @@ def signupSystem():
             continue
 
         database.user_database[usr_name] = password
-        print("Sign-up completed! You can now log-in.")
+        print("Sign-up completed! You can now log-in.\n")
         break
 
-signupSystem()
