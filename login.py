@@ -1,4 +1,5 @@
 import database
+import time
 
 def loginSystem():
 
@@ -29,8 +30,9 @@ def loginSystem():
         else:
             print("Username not found!")
         
-        try_anotheruser = input("Try another username ? (yes / no ): ").lower()
+        try_anotheruser = input("Try login from another username ? (yes / no ): ").lower()
         if try_anotheruser != "yes":
-            print("Terminating the login process.....")
+            print("Terminating the login process.....\n")
+            time.sleep(1)
             break
 
